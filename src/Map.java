@@ -43,11 +43,12 @@ public class Map {
 
     }
 
-    @Override
-    public String toString() {
-        return "Map{" +
-                "sizeX=" + sizeX +
-                ", board=" + Arrays.toString(board) +
-                '}';
+    public void write() {
+        for(int row=0;row<sizeX;row++){
+            System.out.println();
+            for (int collumn=0;collumn<sizeX;collumn++){
+                System.out.print(board[row][collumn]);
+            }
+        }
     }
 }

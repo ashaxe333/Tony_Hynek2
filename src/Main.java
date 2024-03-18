@@ -6,5 +6,9 @@ public class Main {
         map.fillBoard();
         System.out.println(Arrays.deepToString(map.getBoard()));
         System.out.println(map);
+        Move move = new Move();
+        move.playerMove(map,1,1);
+        System.out.println(Arrays.deepToString(map.getBoard()));
+        map.write();
     }
 }
